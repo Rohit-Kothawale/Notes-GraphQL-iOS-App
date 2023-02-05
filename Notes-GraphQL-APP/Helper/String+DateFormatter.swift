@@ -19,3 +19,11 @@ extension String {
         return dateFormatter.date(from: self)
     }
 }
+
+extension Date {
+    func convertToString() -> String? {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = DateFormat.APP_DATE_FORMAT
+        return dateFormatter.string(from: self)
+    }
+}

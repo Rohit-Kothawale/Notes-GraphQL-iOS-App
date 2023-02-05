@@ -20,7 +20,7 @@ class AddNoteViewController: UIViewController {
     @IBAction func saveButtonTapped(_ sender: Any) {
         let titleText = noteTitleTextField.text
         let noteText = noteTextView.text
-        let newNote: NewNote = NewNote(title: titleText, date: "1234", note: noteText)
+        let newNote: NewNote = NewNote(title: titleText, date: Date.now.convertToString(), note: noteText)
         
         if let note = note {
             repository.updateNote(id: note.id!, note: newNote) {[weak self] note in
@@ -72,7 +72,7 @@ class AddNoteViewController: UIViewController {
         }
 
         if let sourceVC = sourceVC {
-            var notes = sourceVC.notesArray
+            let notes = sourceVC.notesArray
             if let _ = self.note {
                 sourceVC.notesArray = notes.map({ note in
                     if note.id == newNote.id {
@@ -81,7 +81,7 @@ class AddNoteViewController: UIViewController {
                     return note
                 })
             } else {
-                notes.append(newNote)
+                sourceVC.notesArray.append(newNote)
             }
         }
         self.navigationController?.popViewController(animated: true)
