@@ -1,0 +1,10 @@
+query FetchAllNotes {
+  getAllNotes {
+    elements {
+        id
+        title
+        note
+        date
+    }
+  }
+}

@@ -1,0 +1,27 @@
+mutation createNewNote($newNote: NewNote) {
+    createNote(note: $newNote) {
+        id
+        title
+        date
+        note
+    }
+}
+
+mutation updateNote($id: ID, $note: NewNote) {
+    updateNote(id: $id, note: $note) {
+        id
+        title
+        date
+        note
+    }
+}
+
+mutation deleteNote($id: ID) {
+    deleteNote(id: $id) {
+        id
+        title
+        date
+        note
+    }
+}
+
