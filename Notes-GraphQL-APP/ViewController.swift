@@ -17,8 +17,8 @@ class ViewController: UIViewController {
         
         if segue.identifier == "updateNoteSegue" {
             vc.note = notesArray[tableView.indexPathForSelectedRow!.row]
-            vc.sourceVC = self
         }
+        vc.sourceVC = self
     }
 
     override func viewDidLoad() {
@@ -54,8 +54,13 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "noteCell", for: indexPath)
-        cell.textLabel?.text = notesArray[indexPath.row].title
+        let cell = tableView.dequeueReusableCell(withIdentifier: "noteCell", for: indexPath) as! NotePrototypeCell
+        let note = notesArray[indexPath.row]
+        cell.cellView.layer.cornerRadius = cell.cellView.frame.height/4
+        cell.titleLabel.text = note.title
+        cell.noteLabel.text = note.note
+        cell.dateLabel.text = note.date?.convertToString()
+
         return cell
     }
 }

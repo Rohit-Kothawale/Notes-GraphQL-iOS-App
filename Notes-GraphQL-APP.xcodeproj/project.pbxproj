@@ -23,6 +23,7 @@
 		9A8D65A4298E73C90068258D /* AddNoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A8D65A3298E73C90068258D /* AddNoteViewController.swift */; };
 		9A8D65A6298E78210068258D /* Mutations.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 9A8D65A5298E78210068258D /* Mutations.graphql */; };
 		9A8D65A8298F61C80068258D /* String+DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A8D65A7298F61C80068258D /* String+DateFormatter.swift */; };
+		9A8D65AA298F7E2A0068258D /* NotePrototypeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A8D65A9298F7E2A0068258D /* NotePrototypeCell.swift */; };
 		E8DCC12D3A8AC5149F10D28D /* Pods_Notes_GraphQL_APP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05EED6C1F60EA2899E8DE01B /* Pods_Notes_GraphQL_APP.framework */; };
 /* End PBXBuildFile section */
 
@@ -46,6 +47,7 @@
 		9A8D65A3298E73C90068258D /* AddNoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNoteViewController.swift; sourceTree = "<group>"; };
 		9A8D65A5298E78210068258D /* Mutations.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = Mutations.graphql; sourceTree = "<group>"; };
 		9A8D65A7298F61C80068258D /* String+DateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+DateFormatter.swift"; sourceTree = "<group>"; };
+		9A8D65A9298F7E2A0068258D /* NotePrototypeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotePrototypeCell.swift; sourceTree = "<group>"; };
 		C5258B55E5FF337E7011F715 /* Pods-Notes-GraphQL-APP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Notes-GraphQL-APP.debug.xcconfig"; path = "Target Support Files/Pods-Notes-GraphQL-APP/Pods-Notes-GraphQL-APP.debug.xcconfig"; sourceTree = "<group>"; };
 		F7277EE27D392A59F9FEF4ED /* Pods-Notes-GraphQL-APP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Notes-GraphQL-APP.release.xcconfig"; path = "Target Support Files/Pods-Notes-GraphQL-APP/Pods-Notes-GraphQL-APP.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -102,6 +104,7 @@
 				9A8D6563298E0B7A0068258D /* AppDelegate.swift */,
 				9A8D6565298E0B7A0068258D /* SceneDelegate.swift */,
 				9A8D6567298E0B7A0068258D /* ViewController.swift */,
+				9A8D65A9298F7E2A0068258D /* NotePrototypeCell.swift */,
 				9A8D65A3298E73C90068258D /* AddNoteViewController.swift */,
 				9A8D6569298E0B7A0068258D /* Main.storyboard */,
 				9A8D656C298E0B7B0068258D /* Assets.xcassets */,
@@ -271,6 +274,7 @@
 				9A8D659F298E36690068258D /* JSON+Extension.swift in Sources */,
 				9A8D65A8298F61C80068258D /* String+DateFormatter.swift in Sources */,
 				9A8D65A2298E36D80068258D /* Repository.swift in Sources */,
+				9A8D65AA298F7E2A0068258D /* NotePrototypeCell.swift in Sources */,
 				9A8D6564298E0B7A0068258D /* AppDelegate.swift in Sources */,
 				9A8D659D298E33790068258D /* Model.swift in Sources */,
 				9A8D6599298E2FCA0068258D /* API.swift in Sources */,
